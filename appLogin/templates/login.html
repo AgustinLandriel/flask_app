@@ -1,0 +1,13 @@
+{% extends 'index.html' %} {% block contenido %}
+
+<h3 class="form__title">Login de usuario</h3>
+<form action="" method="POST" class="form">
+  {{form.hidden_tag()}} {{form.email.label(class="form__label")}}
+  {{form.email(class="form__input")}}
+  <br />
+  {{form.password.label
+  (class="form__label")}}{{form.password(class="form__input")}}
+  <br />{{form.boton(class="form__btn")}}
+</form>
+
+{% endblock %}

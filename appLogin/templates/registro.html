@@ -1,0 +1,18 @@
+{% extends 'index.html' %} {% block contenido %}
+<h3 class="form__title">Formulario de Registro</h3>
+<form action="" method="POST" class="form">
+  {{form.hidden_tag()}} {{form.nombre.label(class="form__label")}} {{form.nombre
+  (class="form__input", placeholder="Nombre")}} {{form.apellido.label
+  (class="form__label")}} {{form.apellido
+  (class="form__input",placeholder="Apellido")}} {{form.email.label
+  (class="form__label")}} {{form.email
+  (class="form__input",placeholder="tucorreo@dominio.com")}} {{form.edad.label
+  (class="form__label")}} {{form.edad(class="form__input",placeholder="Edad")}}
+  {{form.password.label (class="form__label")}}
+  {{form.password(class="form__input",placeholder="Password")}}
+  {{form.check_password.label (class="form__label")}}
+  {{form.check_password(class="form__input",placeholder="Confirmar password")}}
+  {{form.boton (class="form__btn")}}
+</form>
+
+{% endblock %}
